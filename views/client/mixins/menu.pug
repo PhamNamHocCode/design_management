@@ -1,0 +1,17 @@
+mixin menu(logo)
+  a(href='#')
+    img(src=logo)
+  #navLinks.nav-links
+    i.fa.fa-window-close(onclick='hideMenu()')
+    ul
+      li
+        a(href='') HOME
+      li
+        a(href='') ABOUT
+      li
+        a(href='') COURSE
+      li
+        a(href='') BLOG
+      li
+        a(href='') CONTACT
+  i.fa.fa-bars(onclick='showMenu()')

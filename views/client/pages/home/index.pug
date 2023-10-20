@@ -1,0 +1,157 @@
+include ../../mixins/menu.pug
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title #{pageTitle}
+  link(rel='stylesheet' href='/css/home.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lora&family=Merriweather+Sans:ital,\
+  wght@0,300;0,400;0,500;1,500&family=Press+Start+2P&family=Roboto:wght@100;300&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+// HEADER
+section.header
+  nav
+    +menu('images/logo.png')
+    
+  .text-box
+    h1 PRECISION 5680 WORKSTATION
+    p
+      | Higher Performance
+      br
+      | Thin, light 16" workstation with up to UHD+ display.
+    a.hero-btn(href='') Learn More
+
+// ----Course------
+section.course
+  h1 Courses We Offer
+  p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+  .row
+    .course-col
+      h3 Intermediate
+      p
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        | Alias et totam ad minima placeat qui accusantium veritatis?
+        | Dolorum, sed, numquam animi sunt modi blanditiis
+        | rerum voluptatum est recusandae accusantium necessitatibus.
+    .course-col
+      h3 Degree
+      p
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        | Alias et totam ad minima placeat qui accusantium veritatis?
+        | Dolorum, sed, numquam animi sunt modi blanditiis
+        | rerum voluptatum est recusandae accusantium necessitatibus.
+    .course-col
+      h3 Post Graduation
+      p
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        | Alias et totam ad minima placeat qui accusantium veritatis?
+        | Dolorum, sed, numquam animi sunt modi blanditiis
+        | rerum voluptatum est recusandae accusantium necessitatibus.
+
+// -----campus------
+section.campus
+  h1 Explore Dell Technologies
+  .row
+    .campus-col
+      img(src='images/cybersecurity.jpeg')
+      .layer
+        h3 Cybersecurity Awareness Month
+    .campus-col
+      img(src='images/edge.jpeg')
+      .layer
+        h3 Edge Operations Made Simple
+    .campus-col
+      img(src='images/AI.jpeg')
+      .layer
+        h3 Dell APEX AI-optimized Solutions
+
+// ---------- Facilities ----------
+section.facilities
+  h1 Our Facilities
+  p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+  .row
+    .facilities-col
+      img(src='images/library.png')
+      h3 World Class Library
+      p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+    .facilities-col
+      img(src='images/basketball.png')
+      h3 Largest Play Ground
+      p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+    .facilities-col
+      img(src='images/cafeteria.png')
+      h3 Tast and Healthy Food
+      p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+
+// -------- Testimonials ---------
+section.testimonials
+  h1 What Our Student Says
+  p Lorem ipsum dolor sit amet, consectetur adipiscing edit.
+  .row
+    .testimonials-col
+      img(src='images/user1.jpg')
+      div
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing
+          | elit. Fugit amet, unde autem eligendi esse pariatur
+          | voluptas, corrupti explicabo doloribus optio magnam
+          | atque suscipit consequatur laudantium quasi sunt
+          | repudiandae ipsam. Nam?
+        h3 Christine Berkley
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-o
+    .testimonials-col
+      img(src='images/user2.jpg')
+      div
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing
+          | elit. Fugit amet, unde autem eligendi esse pariatur
+          | voluptas, corrupti explicabo doloribus optio magnam
+          | atque suscipit consequatur laudantium quasi sunt
+          | repudiandae ipsam. Nam?
+        h3 David Byer
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-half-o
+
+// -------- Call To Action ---------
+section.cta
+  h1
+    | Enroll For Our Various Online Course
+    br
+    | Anywhere From The World
+  a.hero-btn(href='') CONTACT US
+  
+// -------- Footer ---------
+section.footer
+  h4 About Us
+  p
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    | Quisquam eum eaque dolorum magni, nisi eveniet incidunt
+    | reiciendis nemo eligendi asperiores animi? Dicta enim recusandae
+    | vel expedita, odit sit impedit laboriosam.
+  .icons
+    i.fa.fa-facebook
+    i.fa.fa-twitter
+    i.fa.fa-instagram
+    i.fa.fa-linkedin
+  p
+    | Made with 
+    i.fa.fa-heart-o  by Easy Tutorials
+// JavaScript for Toggle Menu
+script.
+  var navLinks = document.getElementById("navLinks")
+  function showMenu(){
+  navLinks.style.right="0";
+  }
+  function hideMenu(){
+  navLinks.style.right="-200px";
+  }
